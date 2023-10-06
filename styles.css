@@ -1,0 +1,117 @@
+/*IMG - https://www.pixelstalk.net/wp-content/uploads/2016/07/Beer-Image-HD-620x413.jpg*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+/*header*/
+header {
+  background-color: #292b2c;
+  color: #fff;
+  padding: 20px;
+}
+/*navbar*/
+.navbar {
+  text-align: center;
+}
+.nav-items {
+  list-style: none;
+}
+.nav-items li {
+  display: inline;
+  margin-right: 20px;
+}
+.nav-items a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+/*main*/
+main {
+  padding: 20px;
+}
+section {
+  padding-bottom: 20px;;
+}
+/*section menu*/
+.menu-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu-title {
+  font-size: 2.3rem;
+  text-align: center;
+  border-bottom: 5px double black;
+}
+.menu-subtitle {
+  font-size: 1.8rem;
+  text-align: right;
+}
+.menu-item {
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.item-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.item-description {
+  font-size: 18px;
+  color: #777;
+}
+.item-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e44d26;
+}
+/*section history*/
+#history {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.history-image {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.summary {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.caption {
+  font-style: italic;
+  color: #555;
+}
+/*section contact*/
+#contact {
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.contact-title {
+  font-size: 24px;
+  color: #333;
+}
+.contact-text {
+  font-size: 18px;
+  color: #555;
+  margin: 5px 0;
+}
+/*footer*/
+footer {
+  background-color: #292b2c;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
