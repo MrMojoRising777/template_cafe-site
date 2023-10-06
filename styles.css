@@ -72,25 +72,53 @@ section {
 }
 /*section history*/
 #history {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.history-image {
-  max-width: 100%;
-  height: auto;
-  margin: 20px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.history-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.history {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.history-past {
+  text-align: left;
+}
+.history-now {
+  text-align: right;
+  padding-bottom: 16px;
+  border-bottom: 8px double black;
+}
+.history-images {
+  padding-top: 16px;
+  text-align: center;
+}
+.history-subtitle {
+  flex: 1;
 }
 .summary {
-  font-size: 18px;
-  line-height: 1.5;
+  flex: 2;
+  margin-left: 20px;
+}
+.history-image-past,
+.history-image-now,
+.history-image1,
+.history-image2 {
+  max-width: 100%;
+  height: auto;
+}
+.history-image1,
+.history-image2 {
+  border-radius: 50%;;
 }
 .caption {
   font-style: italic;
-  color: #555;
 }
 /*section contact*/
 #contact {

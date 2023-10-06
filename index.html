@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--include stylesheet-->
   <link rel="stylesheet" href="./styles.css">
+  <!--change favicon-->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <title>Cafe</title>
 </head>
 <body>
@@ -117,43 +119,57 @@
     <!--section history-->
     <section id="history">
       <h1 class="history-title">Our History</h1>
-      <h2 class="history-subtitle">Past</h2>
-      <p class="summary">
-        The story of our abbey dates back to the medieval ages when it was first established by a group of dedicated monks. They embarked on a journey to build a place of worship and reflection, which would later become the foundation of our rich history.
-      </p>
-      <img
-        alt="old abbey"
-        class="history-image"
-        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstudioroma.be%2Fwp-content%2Fuploads%2F2011%2F05%2Fpark_abdij_geheel_01.jpg&f=1&nofb=1&ipt=643561d1ecaf68d2ca99772b90f7952adf63f78f249335f7a39e237aa0566917&ipo=images"
-      >
-      <p class="caption">
-        Caption: The old abbey in its original splendor during the medieval ages.
-      </p>
-      <h2 class="history-subtitle">Now</h2>
-      <p class="summary">
-        Today, our abbey stands as a testament to centuries of history and transformation. While our past is deeply rooted in spirituality and contemplation, we have also embraced the art of brewing. Our brewery, nestled within the abbey grounds, combines tradition with innovation to craft exceptional beers that carry the spirit of our heritage.
-      </p>
-      <img
-        alt="new abbey"
-        class="history-image"
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.visitleuven.be%2Fsites%2Fvisitleuven.be%2Ffiles%2Fstyles%2Fis_card%2Fpublic%2Fimages%2F2022-03%2Fluchtfoto_abdijvanpark.jpg%3Fitok%3D-Zw6wCN-&f=1&nofb=1&ipt=05c875a7bcfe1fc2004042e5f5c1a4b4e5268f63a56913f32e6e7b71a15b2a40&ipo=images"
-      >
-      <p class="caption">
-        Caption: The modern abbey, where tradition meets innovation in brewing.
-      </p>
-      <img
-        alt="brewery"
-        class="history-image"
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jumbo.com%2Finspiratie%2Fbier%2Fbrouwen%2F_jcr_content%2Froot%2Fresponsivegrid%2Fcontentcontainer_343113595%2Fcolumntwo%2Fimage.coreimg.jpeg%2F1606567654682%2Fbrand-brouwerij.jpeg&f=1&nofb=1&ipt=0991efe244148786e4a8e6f4b6681146300459ea0b1088786693246e2bccd49e&ipo=images"
-      >
-      <p class="caption">
-        Caption: Our state-of-the-art brewery where the magic of beer-making happens.
-      </p>
-      <img
-        alt="beer_bottles"
-        class="history-image"
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.belvilla.nl%2Finspiratie%2Fwp-content%2Fuploads%2F2017%2F07%2FBier.jpg&f=1&nofb=1&ipt=f27e446935a92dbf988e1ed532ce1ccd5e4aa2cd880b0f03a519b5a193f6c2f9&ipo=images"
-      >
+
+      <!--history past-->
+      <article class="history-past">
+        <h2 class="history-subtitle">Past</h2>
+        <p class="summary">
+          The story of our abbey dates back to the medieval ages when it was first established by a group of dedicated monks. They embarked on a journey to build a place of worship and reflection, which would later become the foundation of our rich history.
+        </p>
+        <img
+          alt="old abbey"
+          class="history-image-past"
+          src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstudioroma.be%2Fwp-content%2Fuploads%2F2011%2F05%2Fpark_abdij_geheel_01.jpg&f=1&nofb=1&ipt=643561d1ecaf68d2ca99772b90f7952adf63f78f249335f7a39e237aa0566917&ipo=images"
+        >
+        <p class="caption">
+          <i>The old abbey in its original splendor during the medieval ages.</i>
+        </p>
+      </article>
+
+      <!--history now-->
+      <article class="history-now">
+        <h2 class="history-subtitle">Now</h2>
+        <p class="summary">
+          Today, our abbey stands as a testament to centuries of history and transformation. While our past is deeply rooted in spirituality and contemplation, we have also embraced the art of brewing. Our brewery, nestled within the abbey grounds, combines tradition with innovation to craft exceptional beers that carry the spirit of our heritage.
+        </p>
+        <img
+          alt="new abbey"
+          class="history-image-now"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.visitleuven.be%2Fsites%2Fvisitleuven.be%2Ffiles%2Fstyles%2Fis_card%2Fpublic%2Fimages%2F2022-03%2Fluchtfoto_abdijvanpark.jpg%3Fitok%3D-Zw6wCN-&f=1&nofb=1&ipt=05c875a7bcfe1fc2004042e5f5c1a4b4e5268f63a56913f32e6e7b71a15b2a40&ipo=images"
+        >
+        <p class="caption">
+          <i>The modern abbey, where tradition meets innovation in brewing.</i>
+        </p>
+      </article>
+
+      <!--history now images inside-->
+      <article class="history-images">
+        <img
+          alt="brewery"
+          class="history-image1"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jumbo.com%2Finspiratie%2Fbier%2Fbrouwen%2F_jcr_content%2Froot%2Fresponsivegrid%2Fcontentcontainer_343113595%2Fcolumntwo%2Fimage.coreimg.jpeg%2F1606567654682%2Fbrand-brouwerij.jpeg&f=1&nofb=1&ipt=0991efe244148786e4a8e6f4b6681146300459ea0b1088786693246e2bccd49e&ipo=images"
+        >
+        <p class="caption">
+          <i>Our state-of-the-art brewery where the magic of beer-making happens.</i>
+        </p>
+        <img
+          alt="beer_bottles"
+          class="history-image2"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.belvilla.nl%2Finspiratie%2Fwp-content%2Fuploads%2F2017%2F07%2FBier.jpg&f=1&nofb=1&ipt=f27e446935a92dbf988e1ed532ce1ccd5e4aa2cd880b0f03a519b5a193f6c2f9&ipo=images"
+        >
+      </article>
+
+
     </section>
     <!--section contact-->
     <section id="contact">
