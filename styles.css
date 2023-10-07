@@ -1,6 +1,5 @@
 /*IMG - https://www.pixelstalk.net/wp-content/uploads/2016/07/Beer-Image-HD-620x413.jpg*/
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #292b2c;
@@ -13,6 +12,7 @@ header {
 }
 /*navbar*/
 .navbar {
+  font-family: 'Roboto';
   text-align: center;
 }
 .nav-items {
@@ -39,7 +39,6 @@ section {
 #menu {
   background-image: url('https://img.wallpapersafari.com/tablet/800/1280/70/7/1DKsBu.jpeg');
   background-size: 100%;
-  font-family: 'Playfair Display';
 }
 .menu-container {
   max-width: 800px;
@@ -77,6 +76,7 @@ section {
 }
 /*section history*/
 #history {
+  font-family: "Homemade Apple";
   background-image: url('https://wallpapercave.com/wp/XEq6o0E.jpg');
   padding: 16px;
   display: flex;
@@ -85,7 +85,6 @@ section {
   text-align: center;
 }
 .history-title {
-  font-family: 'Homemade Apple';
   font-size: 2.3rem;
   margin-bottom: 20px;
 }
@@ -102,7 +101,6 @@ section {
   text-align: left;
 }
 .history-past .summary {
-  font-family: 'Homemade Apple';
   font-size: 18px;
   float: right;
   width: 45%;
@@ -118,7 +116,7 @@ section {
 .history-past .caption {
   clear: both;
   text-align: left;
-  padding-top: 8px;
+  padding-top: 0px;
 }
 
 .history-now {
@@ -128,7 +126,6 @@ section {
   text-align: right;
 }
 .history-now .summary {
-  font-family: 'Homemade Apple';
   font-size: 18px;
   float: left;
   width: 45%;
@@ -176,6 +173,7 @@ section {
 }
 /*section contact*/
 #contact {
+  font-family: "Open Sans";
   background-image: url('https://wallpaperaccess.com/full/5092782.jpg');
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -190,7 +188,6 @@ section {
   width: 45%;
 }
 .contact-title {
-  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   color: #333;
 }
