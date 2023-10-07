@@ -96,27 +96,55 @@ section {
   text-align: left;
 }
 .history-past {
+  margin-bottom: 20px;
+}
+.history-past .history-subtitle {
   text-align: left;
 }
-.history-now {
-  text-align: right;
-  padding-bottom: 16px;
-  border-bottom: 8px double black;
-}
-.history-images {
-  padding-top: 16px;
-  text-align: center;
-}
-.history-subtitle {
-  font-family: 'Homemade Apple';
-  font-size: 24px;
-  flex: 1;
-}
-.summary {
+.history-past .summary {
   font-family: 'Homemade Apple';
   font-size: 18px;
-  flex: 2;
-  margin-left: 20px;
+  float: right;
+  width: 45%;
+  padding: 10px;
+}
+.history-image-past {
+  float: left;
+  width: 45%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+.history-past .caption {
+  clear: both;
+  text-align: left;
+  padding-top: 8px;
+}
+
+.history-now {
+  margin-bottom: 20px;
+}
+.history-now .history-subtitle {
+  text-align: right;
+}
+.history-now .summary {
+  font-family: 'Homemade Apple';
+  font-size: 18px;
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+.history-image-now {
+  float: right;
+  width: 45%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+.history-now .caption {
+  clear: both;
+  text-align: right;
+  padding-top: 8px;
 }
 .history-image-past,
 .history-image-now,
@@ -130,6 +158,10 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+.history-images {
+  padding-top: 16px;
+  text-align: center;
+}
 .history-image1,
 .history-image2 {
   border-radius: 50%;
@@ -141,9 +173,6 @@ section {
 }
 .history-image2 {
   flex: 1;
-}
-.caption {
-  font-style: italic;
 }
 /*section contact*/
 #contact {
