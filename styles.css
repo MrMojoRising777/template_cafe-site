@@ -125,9 +125,22 @@ section {
   max-width: 100%;
   height: auto;
 }
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .history-image1,
 .history-image2 {
-  border-radius: 50%;;
+  border-radius: 50%;
+  width: 45%;
+  padding: 6px;
+}
+.history-image1 {
+  flex: 1;
+}
+.history-image2 {
+  flex: 1;
 }
 .caption {
   font-style: italic;
@@ -137,12 +150,15 @@ section {
   background-image: url('https://wallpaperaccess.com/full/5092782.jpg');
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .contact-container {
+  padding: 20px;
   background-color: #fff;
-  width: 50%;
   margin: auto auto;
+  width: 45%;
 }
 .contact-title {
   font-family: 'Open Sans', sans-serif;
@@ -153,6 +169,10 @@ section {
   font-size: 18px;
   color: #555;
   margin: 5px 0;
+}
+#map {
+  flex: 1;
+  height: 400px;
 }
 /*footer*/
 footer {

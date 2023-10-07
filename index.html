@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Homemade+Apple|Playfair+Display|Anton">
   <!--change favicon-->
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <!--include Leaflet CSS and JavaScript-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <title>Cafe</title>
 </head>
 <body>
@@ -153,19 +156,21 @@
       </article>
       <!--history now images inside-->
       <article class="history-images">
-        <img
-          alt="brewery"
-          class="history-image1"
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jumbo.com%2Finspiratie%2Fbier%2Fbrouwen%2F_jcr_content%2Froot%2Fresponsivegrid%2Fcontentcontainer_343113595%2Fcolumntwo%2Fimage.coreimg.jpeg%2F1606567654682%2Fbrand-brouwerij.jpeg&f=1&nofb=1&ipt=0991efe244148786e4a8e6f4b6681146300459ea0b1088786693246e2bccd49e&ipo=images"
-        >
+        <div class="images-container">
+          <img
+            alt="brewery"
+            class="history-image1"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jumbo.com%2Finspiratie%2Fbier%2Fbrouwen%2F_jcr_content%2Froot%2Fresponsivegrid%2Fcontentcontainer_343113595%2Fcolumntwo%2Fimage.coreimg.jpeg%2F1606567654682%2Fbrand-brouwerij.jpeg&f=1&nofb=1&ipt=0991efe244148786e4a8e6f4b6681146300459ea0b1088786693246e2bccd49e&ipo=images"
+          >
+          <img
+            alt="beer_bottles"
+            class="history-image2"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.belvilla.nl%2Finspiratie%2Fwp-content%2Fuploads%2F2017%2F07%2FBier.jpg&f=1&nofb=1&ipt=f27e446935a92dbf988e1ed532ce1ccd5e4aa2cd880b0f03a519b5a193f6c2f9&ipo=images"
+          >
+        </div>
         <p class="caption">
           <i>Our state-of-the-art brewery where the magic of beer-making happens.</i>
         </p>
-        <img
-          alt="beer_bottles"
-          class="history-image2"
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.belvilla.nl%2Finspiratie%2Fwp-content%2Fuploads%2F2017%2F07%2FBier.jpg&f=1&nofb=1&ipt=f27e446935a92dbf988e1ed532ce1ccd5e4aa2cd880b0f03a519b5a193f6c2f9&ipo=images"
-        >
       </article>
     </section>
     <!--section contact-->
@@ -176,11 +181,26 @@
         <p class="contact-text">Email: info@yourcafe.com</p>
         <p class="contact-text">Phone: +1 (123) 456-7890</p>
       </div>
-      
+      <div id="map" style="height: 400px;"></div>
     </section>
     <footer>
       &copy; 2023 Cafe. All rights reserved.
     </footer>
   </main>
+
+  <script>
+    // Initialize the map
+    const coordinates = [51.0233363, 5.314658]
+    var map = L.map('map').setView(coordinates, 16); // Set the initial center and zoom level
+
+    // Add a tile layer (you can choose different tile providers)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker to the map
+    L.marker(coordinates).addTo(map)
+        .bindPopup('A marker here!'); // You can add a popup message to the marker
+  </script>
 </body>
 </html>
