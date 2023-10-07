@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #292b2c;
 }
 /*header*/
 header {
@@ -36,11 +36,16 @@ section {
   padding-bottom: 20px;;
 }
 /*section menu*/
+#menu {
+  background-image: url('https://img.wallpapersafari.com/tablet/800/1280/70/7/1DKsBu.jpeg');
+  background-size: 100%;
+  font-family: 'Playfair Display';
+}
 .menu-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #F5E8B7;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .menu-title {
@@ -72,13 +77,16 @@ section {
 }
 /*section history*/
 #history {
+  background-image: url('https://wallpapercave.com/wp/XEq6o0E.jpg');
+  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 .history-title {
-  font-size: 24px;
+  font-family: 'Homemade Apple';
+  font-size: 2.3rem;
   margin-bottom: 20px;
 }
 .history {
@@ -100,9 +108,13 @@ section {
   text-align: center;
 }
 .history-subtitle {
+  font-family: 'Homemade Apple';
+  font-size: 24px;
   flex: 1;
 }
 .summary {
+  font-family: 'Homemade Apple';
+  font-size: 18px;
   flex: 2;
   margin-left: 20px;
 }
@@ -122,12 +134,18 @@ section {
 }
 /*section contact*/
 #contact {
-  background-color: #f4f4f4;
+  background-image: url('https://wallpaperaccess.com/full/5092782.jpg');
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+.contact-container {
+  background-color: #fff;
+  width: 50%;
+  margin: auto auto;
+}
 .contact-title {
+  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   color: #333;
 }
